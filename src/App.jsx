@@ -68,6 +68,9 @@ import TermMarkSubmission from "./pages/exam/MarkSubmission/TermMarkSubmission";
 import UnitMarkSubmission from "./pages/exam/MarkSubmission/UnitMarkSubmission";
 import Settings from "./pages/HRM/Settings/Settings";
 import PaybandStructure from "./pages/HRM/PaybandStructure";
+import Employee from "./pages/HRM/Employees/Employee";
+import AddEmployee from "./pages/HRM/Employees/AddEmployeeForm";
+import SalaryStructure from "./pages/HRM/Employees/SalaryStructure";
 // import OnlineAdmissionModal from "./components/academics/studentAdmissionApplication/OnlineAdmissionModal";
 
 function App() {
@@ -201,7 +204,15 @@ function App() {
 
               {/* HRM Routes */}
               <Route path="/hrm/dashboard" element={<Dashboard />} />
-              <Route path="/hrm/employees" element={<Students />} />
+              <Route path="/hrm/employees" element={<Employee />} />
+              <Route
+                path="/hrm/employees/add-employee-form"
+                element={<AddEmployee />}
+              />
+              <Route
+                path="/hrm/employees/salary-structure"
+                element={<SalaryStructure />}
+              />
               <Route path="/hrm/settings" element={<Settings />} />
               <Route
                 path="/hrm/settings/payband-structure"

@@ -301,9 +301,7 @@ export default function PaybandStructure() {
               </div>
               <p className="text-gray-400 ml-12">
                 Configure salary components for{" "}
-                <span className="text-indigo-400 font-semibold">
-                  Consolidated
-                </span>{" "}
+                <span className="text-indigo-400 font-semibold">92500</span>{" "}
                 payband
               </p>
             </div>
